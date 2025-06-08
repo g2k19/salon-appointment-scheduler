@@ -1,4 +1,28 @@
-# fCC "Salon Scheduler" Project
-This is just the repository needed for completing the fcc project. It contains the database file with the base data for the services as well as the script file to "book/create" appointments.
+# Salon Appointment Scheduler
 
-More information about the actual project can be found on [freeCodeCamp's website](https://www.freecodecamp.org) under the Relational Database section of the Cirriculum.
+An interactive Bash program that uses PostgreSQL to manage salon services, customers, and appointments, built as part of the [**FreeCodeCamp Relational Database Certification**](https://www.freecodecamp.org/learn/relational-database/).
+
+## About
+
+This command-line application allows customers to book appointments at a salon by selecting from available services, providing their contact information, and choosing their preferred appointment time. The system automatically manages customer records and tracks all appointments in a PostgreSQL database.
+
+## Features
+
+- **Interactive service selection**: Browse numbered list of available salon services
+- **Customer management**: Automatic customer registration for new clients
+- **Appointment booking**: Schedule appointments with preferred times
+- **Data persistence**: All customer and appointment data stored in PostgreSQL
+
+## Tech Stack
+
+- **Database**: PostgreSQL
+- **Scripting**: Bash
+
+## 🚀 How to Run
+1. **Set up PostgreSQL database:** `psql --username=freecodecamp --dbname=postgres < salon.sql`.
+1. **Make the script executable:** `chmod +x salon.sh`.
+1. **Run the appointment scheduler:** `./salon.sh`.
+
+## freeCodeCamp Requirements
+
+This project fulfills all freeCodeCamp requirements.
